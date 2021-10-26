@@ -1,0 +1,9 @@
+{% set blockCounter = 0 %}
+{% for block in entry.pageContent.all() %}
+{% set blockCounter = blockCounter + 1 %}
+{% switch block.type %}
+	{% case '' %}
+	{% case '' %}
+	{% default %}
+{% endswitch %}
+{% endfor %}

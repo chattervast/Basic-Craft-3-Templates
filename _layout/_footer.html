@@ -1,0 +1,12 @@
+{% set nodes = craft.navigation.nodes('footer').all() %}
+{% nav node in nodes %}
+	<li>
+	    {{ node.link }}
+	    	
+	    {% ifchildren %}
+	        <ul>
+	            {% children %}
+	        </ul>
+	    {% endifchildren %}
+	</li>
+{% endnav %}
